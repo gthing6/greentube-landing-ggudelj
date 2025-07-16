@@ -1,18 +1,18 @@
 # Greentube Stats Web App
 
-This project is a modern React web application showcasing key statistics for Greentube, a leading gaming platform. 
-It features a clean UI built with Chakra UI and TypeScript, highlighting industry metrics such as active players, games launched, global markets, and platform uptime.
+This project is a modern React web application showcasing key statistics for Greentube 
+It features a clean UI built with Tailwind Css and TypeScript
 
 ## Features
 - Responsive design for desktop and mobile
 - Stats cards with smooth hover effects
-- Theming support (light/dark mode)
+- Theming support (dark mode)
 - Modular component structure
 
 ## Tech Stack
 - React
 - TypeScript
-- Chakra UI
+- Tailwind CSS
 - Vite (recommended for development)
 
 ## Getting Started
@@ -51,4 +51,4 @@ package.json
 - Add new components in `src/components/`
 
 ## License
-This project is for demonstration purposes only.
+This project is for demonstration purposes only
