@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, User } from 'lucide-react';
 import GreentubeLogo from '../assets/greentube-logo.svg';
 
@@ -49,6 +49,14 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [isOpen]);
 
   return (
     <div 
@@ -135,7 +143,10 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-gray-700 bg-gray-800 shadow-[0_0_20px_rgba(34,197,94,0.3)]">
+          <div 
+            className="md:hidden border-t border-gray-700 bg-gray-800"
+            onClick={() => setIsOpen(false)}
+          >
             {/* Left nav items */}
             {navItems.map((item) => (
               <div key={item.label} className="py-2">
@@ -167,7 +178,7 @@ export default function Header() {
               </div>
             ))}
             
-            <div className="pt-4 items-center flex justify-center">
+            <div className="pt-4 pb-4 items-center flex justify-center">
               <button className="w-auto flex items-center justify-center space-x-2 bg-gray-700 text-green-400 rounded-lg px-6 py-2 hover:bg-gray-600 transition-all duration-300 font-medium hover:shadow-[0_0_12px_rgba(34,197,94,0.5)]">
                 <User className="h-4 w-4" />
                 <span>Account</span>

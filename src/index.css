@@ -32,3 +32,18 @@ body {
   -ms-overflow-style: none; 
   scrollbar-width: none;    
 }
+
+@keyframes color-pulse {
+  0%, 100% {
+    color: #fff;
+    text-shadow: 0 4px 24px #99f7bc, 0 1px 0 #000;
+  }
+  50% {
+    color: #d0f7db;
+    text-shadow: 0 6px 32px #99f7bc, 0 1px 0 #000;
+  }
+}
+
+.animate-color-pulse {
+  animation: color-pulse 5s infinite;
+}

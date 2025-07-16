@@ -28,7 +28,7 @@ export default function Stats() {
             >
               <div className="text-center">
                 <p className="text-sm font-medium text-gray-400 mb-2">{item.title}</p>
-                <p className="text-3xl font-bold text-green-600 mb-1">{item.stat}</p>
+                <p className="text-3xl font-bold text-green-600 mb-1 animate-color-pulse drop-shadow-sm">{item.stat}</p>
                 <p className="text-sm text-gray-400">{item.helpText}</p>
               </div>
             </div>

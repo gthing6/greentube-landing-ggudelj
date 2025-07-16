@@ -8,8 +8,8 @@ export default function Hero() {
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             <span className="relative">
-              Premium Gaming
-              <span className="absolute bottom-2 left-0 w-full h-3 bg-green-400 opacity-30 -z-10"></span>
+              Real Slot Gaming
+            <span className="absolute bottom-2 left-0 w-full h-3 bg-green-400 opacity-30 -z-10"></span>
             </span>
             <br />
             <span className="text-green-600">Experience</span>
@@ -40,7 +40,7 @@ export default function Hero() {
                   <h3 className="text-lg font-semibold text-white">Global Reach</h3>
                 </div>
                 <p className="text-gray-300">
-                  Trusted by operators worldwide, delivering premium gaming solutions across multiple markets and platforms.
+                  Trusted by operators worldwide, delivering gaming solutions across multiple markets and platforms.
                 </p>
               </div>
 
