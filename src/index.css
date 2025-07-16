@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure snap scrolling works properly */
+body {
+  overflow-x: hidden;
+}
+
+.primary-button {
+  background: linear-gradient(225.23deg, #cddc28, #18a34a);;
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+
+.secondary-button {
+  border-image-source: linear-gradient(to left, #cddc28, #18a34a);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;    
+}
